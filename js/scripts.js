@@ -37,6 +37,7 @@ $(document).ready(function(){
   $("#galToL").click(function(){
     var volume = parseInt(prompt("What is the volume in gallons that you would like to convert?"));
     console.log(convertGalToL(volume));
+    alert("Liters = " + convertGalToL(volume));
   });
 
 });
