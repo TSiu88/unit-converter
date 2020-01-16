@@ -17,12 +17,6 @@ function convertTemp(input, temp){
   }
 }
 
-/* function convertCToF(){
-    var result = parseInt(prompt("How hot in C?"));
-    alert(result * (9/5) + 32);
-  } 
-  convertCToF(); */
-
 function convertGalToL(volume){
   return volume * 3.78541;
 }
@@ -34,10 +28,13 @@ $(document).ready(function(){
 
   //convertTemp(inputType, inputTemp);
 
-  $("#galToL").click(function(){
-    var volume = parseInt(prompt("What is the volume in gallons that you would like to convert?"));
+  $("#galToL").submit(function(event){
+    event.preventDefault();
+    var volume = parseInt($("#gal").val());
     console.log(convertGalToL(volume));
-    alert("Liters = " + convertGalToL(volume));
+    var result = convertGalToL(volume);
+
+    $("#output").text(result);
   });
 
 });
