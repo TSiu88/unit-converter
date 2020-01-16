@@ -13,14 +13,26 @@
 
       <div class="converters">
         
-        <form id="galToL">
-          <h2>Convert from Gallons to Liters</h2>
+        <form id="galAndL">
+          <h2>Convert between Gallons and Liters</h2>
           <div class="form-group">
-            <label for="gal">Gallons:</label>
-            <input id="gal" class="form-control" type="text">
+            <label for="galOrL">Input to Convert:</label>
+            <input id="galOrL" class="form-control" type="text">
           </div>
 
-          <button type="submit" class="btn">Convert</button>
+          <button type="submit" class="btn" id="galToL">Convert to Liters</button>
+          <button type="submit" class="btn" id="lToGal">Convert to Gallons</button>
+        </form>
+
+        <form id="cAndF">
+          <h2>Convert between Celsius and Fahrenheit</h2>
+          <div class="form-group">
+            <label for="cOrF">Input to Convert:</label>
+            <input id="cOrF" class="form-control" type="text">
+          </div>
+
+          <button type="submit" class="btn" id="fToC">Convert to Celsius</button>
+          <button type="submit" class="btn" id="cToF">Convert to Fahrenheit</button>
         </form>
 
       </div> <!--End of converters-->
@@ -29,7 +41,7 @@
       <div id="output">
 
       </div>
-      
+
     </div> <!--End of container-->
     
   </body>
